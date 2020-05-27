@@ -1,6 +1,6 @@
 # SmartBackup
 
-[![N|Solid](http://www.acuworkflow.com/img/AcuWorkflow-logo-01Lgr2-50.jpg)](http://www.acuworkflow.com)
+[![N|Solid](images/AcuWorkflow-logo-02L.jpg)](http://www.acuworkflow.com)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
