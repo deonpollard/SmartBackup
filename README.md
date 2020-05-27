@@ -62,12 +62,14 @@ Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenan
 | TenantOrg | Organization Name of Tenant e.g. **Acme Corp** |
 | TenantToken | Smartsheet **API Token** of Tenant (Backup Source) |
 | VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment |
-| VaultID | Smartsheet **ID** of Workspace where designated Vault resides [see Backup Vault](##### Backup-Vault)|
+| VaultID | Smartsheet **ID** of Workspace where designated Vault resides link: [Go to Heading section] (#-this-is-a-heading)|
 | VaultLink | Smartsheet **Link** of Workspace where designated Vault resides |
 
 1. You can have multiple Tenant Files each containing differing configurations based on your setup
 2. At run time associate the Tenant file you want to use for that particular run
 3. To get Smartsheet API tokens or ID's refer to [Smartsheet](https://www.smartsheet.com) 
+
+# this is a heading
 
 ##### Backup Vault
 Configure a Smartsheet Workspace that will act as the backup container.  To do this:
