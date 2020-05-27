@@ -110,13 +110,13 @@ Open Windows Task Scheduler and configure EXE to a schedule of your choice
 ##### Run using PowerShell
 Script EXE using Powershell
 
-## Authors
+# Authors
 
 * **Deon Pollard** - *Base software R2.3* - [deon pollard & associates](https://deonpollard.com)
 
 See also list of [contributors](http://www.acusoftware.com) who participated in this project.
 
-## License
+# License
 
 [![N|Solid](images/cc.png)](https://creativecommons.org/about/cclicenses/)
 This project is licensed under the Creative Commons License -  [LICENSE](https://creativecommons.org/about/cclicenses/) for details 
