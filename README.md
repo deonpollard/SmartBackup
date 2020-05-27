@@ -33,9 +33,9 @@ SmartBackup is a cloud-enabled backup utility for [Smartsheet](https://www.smart
 These instructions will get you up and running with SmartBackup.
 
 Steps involved:
-  - Install SmartBackup for yourself, team, division, or Organization
-  - Configure it for your needs
-  - Schedule SmartBackup to run  
+  - **Installation** Install SmartBackup for yourself, team, division, or Organization
+  - **Setup and Configuration** Configure SmartBackup for your needs
+  - **Run SmartBackup** Schedule SmartBackup to run  
 
 ### Installation
 
@@ -62,7 +62,7 @@ Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenan
 | TenantOrg | Organization Name of Tenant e.g. **Acme Corp** |
 | TenantToken | Smartsheet **API Token** of Tenant (Backup Source) |
 | VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment |
-| VaultID | Smartsheet **ID** of Workspace where designated Vault resides |
+| VaultID | Smartsheet **ID** of Workspace where designated Vault resides [see Backup Vault](##### Backup-Vault)|
 | VaultLink | Smartsheet **Link** of Workspace where designated Vault resides |
 
 1. You can have multiple Tenant Files each containing differing configurations based on your setup
