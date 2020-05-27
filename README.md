@@ -118,6 +118,6 @@ See also list of [contributors](http://www.acusoftware.com) who participated in 
 
 ## License
 
-[![N|Solid](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)](https://creativecommons.org/about/cclicenses/)
+[![N|Solid](images/cc.png)](https://creativecommons.org/about/cclicenses/)
 This project is licensed under the Creative Commons License -  [LICENSE](https://creativecommons.org/about/cclicenses/) for details 
 
