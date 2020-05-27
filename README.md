@@ -5,37 +5,41 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
 SmartBackup is a cloud-enabled backup utility for [Smartsheet](https://www.smartsheet.com).  Backup all your Smartsheet data. 
-(c) 2020 AcuWorkflow
+(c) 2020 AcuWorkflow.
 
-  - Multi-Tenant solution - can take backups of all, groups of or any Smartsheet User
-  - Preserve all Sheet formatting, a feature not available from standard Smartsheet
-  - Perform snap-shot copy of all your sheets to Smartsheet Workspace of your choice
-  - Ideal for individuals or teams wanting to snapshot data after certain events
+- Multi-Tenant solution - can take backups of all, groups of or any Smartsheet User
+-	Preserve all Sheet formatting, a feature not available from standard Smartsheet backups
+-	Perform snapshot copy of all your sheets to a Smartsheet Workspace of your choice
+-	Ideal for individuals or teams wanting to snapshot data after certain events milestones
+
 
 # Easy to Use
 
-  - You designate any Smartsheet Workspace as Backup Vault. 
-  - On the next backup run, all your sheets will be backed-up into Backup Vault group by backup set Folder
-  - Restore is a doddle, you simply copy the Sheet from Backup Vault area
+-	You can designate any Smartsheet Workspace as Backup Vault
+-	On the next backup run, all your sheets will be backed-up into the Backup Vault group by backup set Folder
+-	Restore is a doddle, you simply copy the Sheet or rows from the Backup Vault area
+
 
 # How it works
-- SmartBackup can run instantly on demand, on schedule or automated intervals
-- SmartBackup will create a new folder with a timestamp in the user defined SmartSheet Vault designating a backup set
-- For each configured Smartsheet User (Tenant) it backs up all the sheets owned by that user into designated Vault and Backup set folder.
-- Extensive logging and status is provided
+
+-	SmartBackup can run instantly on demand, on schedule, or at automated intervals
+-	SmartBackup will create a new folder with a timestamp in the user defined SmartSheet Vault designating a backup set
+-	For each configured Smartsheet User (Tenant) it backs up all the sheets owned by that user into the designated Vault and Backup set folder
+-	Extensive logging and status are provided
+
 
 # Getting Started
 
 These instructions will get you up and running with SmartBackup.
 
 Steps involved:
-  - Install SmartBackup for yourself, team, division or Organization
+  - Install SmartBackup for yourself, team, division, or Organization
   - Configure it for your needs
   - Schedule SmartBackup to run  
 
 ### Installation
 
-SmartBackup for Windows requires EXE to run.
+SmartBackup for Windows requires an EXE to run.
 
 Install SmartBackup on Backup Machine of your choice.
 
@@ -48,16 +52,16 @@ $ xcopy <source> smartbackup
 ### Setup and Configuration
 
 ##### Tenants file
-Edit SmartBackup.csv to contain entries for every Smartsheet User(Tenant) you want to backup.  Note column names must be spelled exactly as shown and is case-sensitive.
+Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
 | Name | Value |
 | ------ | ------ |
-| Status | Must be set to **'Enabled'** for processing tenant entry.  To disable entry on backup run change to any Status value of your choice |
+| Status | Must be set to **'Enabled'** for processing tenant entry. To disable an entry on backup run change to the Status value to **‘Disabled’** |
 | Tenant | Name of Tenant e.g. **Joe Blocks** |
 | TenantID | Email address of Tenant e.g. **joe.blocks@acme.com** |
 | TenantOrg | Organization Name of Tenant e.g. **Acme Corp** |
 | TenantToken | Smartsheet **API Token** of Tenant (Backup Source) |
-| VaultToken | Smartsheet **API Token** of Vault Tenant. (Backup Target)  Should be the same if Tenant is backing up to a Workspace within his/her environment |
+| VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment |
 | VaultID | Smartsheet **ID** of Workspace where designated Vault resides |
 | VaultLink | Smartsheet **Link** of Workspace where designated Vault resides |
 
@@ -99,7 +103,7 @@ Script EXE using Powershell
 
 * **Deon Pollard** - *Base software R2.3* - [deon pollard & associates](https://deonpollard.com)
 
-See also the list of [contributors](http://www.acusoftware.com) who participated in this project.
+See also list of [contributors](http://www.acusoftware.com) who participated in this project.
 
 ## License
 
