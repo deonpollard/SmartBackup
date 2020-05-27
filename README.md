@@ -62,32 +62,34 @@ Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenan
 | TenantOrg | Organization Name of Tenant e.g. **Acme Corp** |
 | TenantToken | Smartsheet **API Token** of Tenant (Backup Source) |
 | VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment |
-| VaultID | Smartsheet **ID** of Workspace where designated Vault resides link: [Go to Heading section] (#-this-is-a-heading)|
-| VaultLink | Smartsheet **Link** of Workspace where designated Vault resides |
+| VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides |
+| VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides |
 
 1. You can have multiple Tenant Files each containing differing configurations based on your setup
 2. At run time associate the Tenant file you want to use for that particular run
-3. To get Smartsheet API tokens or ID's refer to [Smartsheet](https://www.smartsheet.com) 
-
-# this is a heading
+4. To get TenantToken [guide](https://help.meisterplan.com/hc/en-us/articles/115003776834-Creating-an-API-Access-Token-for-Smartsheet)
+- Login to Smartsheet, click on Account top right
+- Select Apps & Integrations, then API, Generate Token
+- **Token** becomes your **TenantToken** in tenantfile, that way the backup knows who you are and therefore what files to backup
 
 ##### Backup Vault
 Configure a Smartsheet Workspace that will act as the backup container.  To do this:
 1. Login to Smartsheet, select **Workspaces**, right-click and then select [Create new Workspace](https://www.smartsheet.com)
 2. Name the Workspace aptly, such as ``Vault`` or ``Backup Vault`` or ``SmartBackup Vault``
 3. Right-click on Vault Workspace and select **Properties**
-4. Copy the **Workspace ID** to TenantFile **VaultID**, in so doing it becomes the designated Target Backup area
+4. Copy the **Workspace ID** to tenantfile **VaultID**, in so doing it becomes the designated Target Backup area
 5. Copy the **Workspace Link** to tenantfile **VaultLink**
 
 
 ### Run SmartBackup
+- SmartBackup R2.3 is only available for Windows environments 
+- MacOS and Linux Versions will shortly be released  
 
 ##### Optional Arguments
 ``-t or --tenant path\smartbackup.csv`` Path and filename of *TenantsFile*.  If not supplied will default to SmartBackup.csv in execution folder.  Smartbackup will terminate if file not found.
 
 ``-l or --log path\smartbackup.csv`` Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in execution folder.  If not found will attempt to create one in execution folder.  Smartbackup will terminate if it cannot be created.
 
-```tenanttoken```
 
 ##### Run from Windows CMDLine
 Invoke Cmdline by clicking on Windows search and type ``cmd``
