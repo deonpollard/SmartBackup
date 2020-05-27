@@ -69,6 +69,13 @@ Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenan
 2. At run time associate the Tenant file you want to use for that particular run
 3. To get Smartsheet API tokens or ID's refer to [Smartsheet](https://www.smartsheet.com) 
 
+##### Backup Vault
+Configure a Smartsheet Workspace that will act as the backup container.  To do this:
+1. Login to Smartsheet, select **Workspaces**, right-click and then select [Create new Workspace](https://www.smartsheet.com)
+2. Name the Workspace aptly, such as ``Vault`` or ``Backup Vault`` or ``SmartBackup Vault``
+3. Right-click on Vault Workspace and select **Properties**
+4. Copy the **Workspace ID** to TenantFile **VaultID**, in so doing it becomes the designated Target Backup area
+5. Copy the **Workspace Link** to tenantfile **VaultLink**
 
 
 ### Run SmartBackup
