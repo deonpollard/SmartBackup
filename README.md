@@ -86,9 +86,12 @@ Configure a Smartsheet Workspace that will act as the backup container.  To do t
 - MacOS and Linux Versions will shortly be released  
 
 ##### Optional Arguments
-``-t or --tenant path\smartbackup.csv`` Path and filename of *TenantsFile*.  If not supplied will default to SmartBackup.csv in execution folder.  Smartbackup will terminate if file not found.
+The following parameters can optionally be passed as arguments on cmdiline invocation
+``-t or --tenantfile path\smartbackup.csv`` Path and filename of *TenantsFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  Smartbackup will terminate if file not found.
 
-``-l or --log path\smartbackup.csv`` Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in execution folder.  If not found will attempt to create one in execution folder.  Smartbackup will terminate if it cannot be created.
+``-l or --logfile path\smartbackup.csv`` Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in current execution folder.  If not found will attempt to create one in current execution folder.  Smartbackup will terminate if it cannot be created.
+
+``-d or --days 7`` Incremental backup.  Example shown, only backup sheets modified in last 7 days.  Backup all files modified in **days** period.  Default is 3 days.  To turn incremental backup into full backup typically do ``-d 9999``
 
 
 ##### Run from Windows CMDLine
