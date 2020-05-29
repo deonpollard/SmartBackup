@@ -130,8 +130,11 @@ Examples:
 #### Run from Windows CMDLine
 Invoke Cmdline by clicking on Windows search and type ``cmd``then invoke as follows.
 Examples:
-> ``sbu_r2.3``  invoke with no parameters
+
+> ``sbu_r2.3``  
+
 > ``sbu_r2.3 -t c:\smartbackup\tenants\tenants.csv``
+
 > ``sbu_r2.3 -d 15 -t=c:\smartbackup\sbutenants.csv -l=c:\smartbackup\sbulog.log``
 
 #### Run from Windows Shortcut
