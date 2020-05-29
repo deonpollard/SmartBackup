@@ -27,6 +27,7 @@ SmartBackup is a cloud-enabled backup utility for [Smartsheet](https://www.smart
 -	For each configured Smartsheet User (Tenant) it backs up all the sheets owned by that user into the designated Vault and Backup set folder
 -	Extensive logging and status are provided
 
+[![N|Solid](images/vault01.png)](http://www.acuworkflow.com)
 
 # Getting Started
 
