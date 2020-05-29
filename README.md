@@ -7,10 +7,10 @@
 SmartBackup is a cloud-enabled backup utility for [Smartsheet](https://www.smartsheet.com).  Backup all your Smartsheet data. 
 (c) 2020 AcuWorkflow.
 
-- Multi-Tenant solution - can take backups of all, groups of or any Smartsheet User
--	Preserve all Sheet formatting, a feature not available from standard Smartsheet backups
--	Perform snapshot copy of all your sheets to a Smartsheet Workspace of your choice
--	Ideal for individuals or teams wanting to snapshot data after certain events milestones
+- [x] Multi-Tenant solution - can take backups of all, groups of or any Smartsheet User
+-	[x] Preserve all Sheet formatting, a feature not available from standard Smartsheet backups
+-	[x] Perform snapshot copy of all your sheets to a Smartsheet Workspace of your choice
+-	[x] Ideal for individuals or teams wanting to snapshot data after certain events milestones
 
 
 # Easy to Use
@@ -84,7 +84,10 @@ Configure a Smartsheet Workspace that will act as the backup container.  To do t
 
 ### Run SmartBackup
 - SmartBackup R2.3 is only available for Windows environments 
-- MacOS and Linux Versions will shortly be released  
+- MacOS and Linux Versions will shortly be released 
+- When invoked from cmdline ```sbu_r2.3``` status and progress for each tenant will be shown as indicated below
+
+[![N|Solid](images/vault02.png)](http://www.acuworkflow.com)
 
 ##### Optional Arguments
 The following parameters can optionally be passed as arguments on cmdiline invocation
