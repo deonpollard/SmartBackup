@@ -148,9 +148,9 @@ Script EXE using Powershell
 
 # Authors
 
-* **Deon Pollard** - *Base software R2.3* - [deon pollard & associates](https://deonpollard.com)
+* **Deon Pollard** - *Base software R2.3* - [deon pollard & associates](https://www.deonpollard.com)
 
-> See also list of [contributors](http://www.acusoftware.com) who participated in this project.
+> See also list of [contributors](http://www.acuworkflow.com) who participated in this project.
 
 # Planned Changes
 The following enhancements are planned
