@@ -46,7 +46,7 @@ Steps involved:
 
 *SmartBackup* for Windows requires an EXE to run.
 
-Install *SmartBackup* on Backup Machine of your choice.  The version in [distro]() is restricted to backing up only 3 sheets
+Install *SmartBackup* on Backup Machine of your choice.  The version in [distro](/distro) is restricted to backing up only 3 sheets
 
 ```sh
 $ mk smartbackup
