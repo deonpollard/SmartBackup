@@ -46,7 +46,7 @@ Steps involved:
 
 *SmartBackup* for Windows requires an EXE to run.
 
-Install *SmartBackup* on Backup Machine of your choice.
+Install *SmartBackup* on Backup Machine of your choice.  The version in [distro]() is restricted to backing up only 3 sheets
 
 ```sh
 $ mk smartbackup
@@ -99,20 +99,26 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 #### Optional Arguments
 The following parameters can optionally be passed as arguments on cmdline invocation
 
-|Argument | Description |Example |
-| ------ | ------ | ------ |
-|**-t** or **--tenantsfile** | Path and filename of *TenantsFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  *Smartbackup* will terminate if file not found | ``-t c:\smartbackup\smartbackup.csv`` |
+**-t** or **--tenantfile** Path and filename of *TenantFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  *Smartbackup* will terminate if file not found 
+Examples:  
+``-t c:\smartbackup\smartbackup.csv``
+``--tenantfile \\acmecorp\appserver\smartbackup.csv``
 
-``-l or --logfile path\smartbackup.csv`` Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in current execution folder.  If not found will attempt to create one in current execution folder.  Smartbackup will terminate if it cannot be created.
+**-l** or **--logfile** Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in current execution folder.  If not found will attempt to create one in current execution folder.  Smartbackup will terminate if it cannot be created.
+Examples:
+``--logfile path\smartbackup.csv`` 
 
-``-d or --days 7`` Incremental backup.  Example shown, only backup sheets modified in last 7 days.  Backup all files modified in **days** period.  Default is 5 days.  To turn incremental backup into full backup typically do ``-d 9999``
+**-d** or **--days** Incremental backup by only backing up sheets modified in **days** period.  Default is ``5`` days.  To turn incremental backup into full backup typically do ``-d 9999``
+Examples:
+``-d 7`` 
+``--days 30``
 
 #### Run from Windows CMDLine
-Invoke Cmdline by clicking on Windows search and type ``cmd``
-then invoke as follows:
-
-> ``sbu_r2.3.exe``  
-> ``sbu_r2.3.exe -t c:\smartbackup\tenants\tenants.csv``
+Invoke Cmdline by clicking on Windows search and type ``cmd``then invoke as follows.
+Examples:
+> ``sbu_r2.3``  invoke with no parameters
+> ``sbu_r2.3 -t c:\smartbackup\tenants\tenants.csv``
+> ``sbu_r2.3 -d 15 -t=c:\smartbackup\sbutenants.csv -l=c:\smartbackup\sbulog.log``
 
 #### Run from Windows Shortcut
 Create shortcut pointing to EXE and click on shortcut
