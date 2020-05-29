@@ -87,7 +87,7 @@ Configure a Smartsheet Workspace that will act as the backup container.  To do t
 - MacOS and Linux Versions will shortly be released 
 - When invoked from cmdline status and progress for each tenant will be shown as indicated below
 
-[![sbu run](images/vault02.png)](http://www.acuworkflow.com)
+[![sbu run](images/vault01.png)](http://www.acuworkflow.com)
 
 ##### Optional Arguments
 The following parameters can optionally be passed as arguments on cmdiline invocation
