@@ -37,9 +37,9 @@
 These instructions will get you up and running with *SmartBackup*.
 
 Steps involved:
-  1 **Installation** Install SmartBackup for yourself, team, division, or Organization
-  2 **Setup and Configuration** Configure SmartBackup for your needs
-  3 **Run SmartBackup** Schedule SmartBackup to run  
+  1. **Installation** Install SmartBackup for yourself, team, division, or Organization
+  2. **Setup and Configuration** Configure SmartBackup for your needs
+  3. **Run SmartBackup** Schedule SmartBackup to run  
 
 ## Installation
 
@@ -69,9 +69,9 @@ The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv f
 | VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides |
 | VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides |
 
-1. You can have multiple Tenant Files each containing differing configurations based on your setup
-2. At run time associate the Tenant file you want to use for that particular run
-3. To get TenantToken 
+- You can have multiple Tenant Files each containing differing configurations based on your setup
+- At run time associate the Tenant file you want to use for that particular run
+- To get TenantToken 
    - Login to Smartsheet, click on Account top right
    - Select Apps & Integrations, then API, Generate Token
    - **Token** becomes your **TenantToken** in tenantfile, that way the backup knows who you are and therefore what files to backup
@@ -128,6 +128,13 @@ Script EXE using Powershell
 * **Deon Pollard** - *Base software R2.3* - [deon pollard & associates](https://deonpollard.com)
 
 > See also list of [contributors](http://www.acusoftware.com) who participated in this project.
+
+# Planned Changes
+The following enhancements are planned
+
+- Direct Archiving Option
+- Indirect Archiving Option - Ability to automatically roll-off and archive sheets from Vault into Archive
+- Improved Reporting, Backup Catalog and Maps
 
 # License
 
