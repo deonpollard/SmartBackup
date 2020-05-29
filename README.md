@@ -10,7 +10,7 @@
 - [x] **Multi-Tenant** solution - can take backups of all, groups-of or any Smartsheet User
 -	[x] **Preserve** all Sheet formatting, a feature not available from standard Smartsheet backups
 -	[x] Perform **snapshot copy** of all your sheets to a Smartsheet Workspace of your choice
--	[x] **Incremental or full back-ups** you have the option to only backup sheets that have changed in last ```x``` days
+-	[x] **Incremental or full back-ups** you have the option to only backup sheets that have changed in last ```+x``` days
 -	[x] Ideal for individuals or teams wanting to snapshot data after certain **events milestones**
 
 Typically *SmartBackup* is used to provide **rolling window of active sheets** one can re-instate, ideal for when inadvertent changes are made and one needs to roll-back invalid copy
