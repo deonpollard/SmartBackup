@@ -18,33 +18,34 @@
 # Easy to Use
 
 -	You can designate any Smartsheet Workspace as Backup Vault
--	On the next backup run, all your sheets will be backed-up into the Backup Vault group by backup set Folder
+-	On the next backup run, all or a subset of your sheets will be backed-up into the Backup Vault group by backup set Folder
 -	Restore is a doddle, you simply copy the Sheet or rows from the Backup Vault area
 
 
 # How it works
 
--	SmartBackup can run instantly on demand, on schedule, or at automated intervals
--	SmartBackup will create a new folder with a timestamp in the user defined SmartSheet Vault designating a backup set
--	For each configured Smartsheet User (Tenant) it backs up all the sheets owned by that user into the designated Vault and Backup set folder
+-	*SmartBackup* can run instantly on demand, on schedule, or at automated intervals
+- Optionally you can override the backup set scope (e.g. only backup sheets that have been modified last ```x``` days
+-	*SmartBackup* will create a new folder with a timestamp in the user defined SmartSheet Vault designating a backup set
+-	For each configured Smartsheet User (Tenant) it backs up all/subset of the sheets owned by that user into the designated Vault and Backup set folder
 -	Extensive logging and status are provided
 
 [![N|Solid](images/vault01.png)](http://www.acuworkflow.com)
 
 # Getting Started
 
-These instructions will get you up and running with SmartBackup.
+These instructions will get you up and running with *SmartBackup*.
 
 Steps involved:
-  - **Installation** Install SmartBackup for yourself, team, division, or Organization
-  - **Setup and Configuration** Configure SmartBackup for your needs
-  - **Run SmartBackup** Schedule SmartBackup to run  
+  1 **Installation** Install SmartBackup for yourself, team, division, or Organization
+  2 **Setup and Configuration** Configure SmartBackup for your needs
+  3 **Run SmartBackup** Schedule SmartBackup to run  
 
-### Installation
+## Installation
 
-SmartBackup for Windows requires an EXE to run.
+*SmartBackup* for Windows requires an EXE to run.
 
-Install SmartBackup on Backup Machine of your choice.
+Install *SmartBackup* on Backup Machine of your choice.
 
 ```sh
 $ mk smartbackup
@@ -52,10 +53,10 @@ $ cd smartbackup
 $ xcopy <source> smartbackup
 ```
 
-### Setup and Configuration
+## Setup and Configuration
 
-##### Tenants file
-Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
+### Tenants file
+The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
 | Name | Value |
 | ------ | ------ |
@@ -70,13 +71,15 @@ Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenan
 
 1. You can have multiple Tenant Files each containing differing configurations based on your setup
 2. At run time associate the Tenant file you want to use for that particular run
-4. To get TenantToken [guide](https://help.meisterplan.com/hc/en-us/articles/115003776834-Creating-an-API-Access-Token-for-Smartsheet)
-- Login to Smartsheet, click on Account top right
-- Select Apps & Integrations, then API, Generate Token
-- **Token** becomes your **TenantToken** in tenantfile, that way the backup knows who you are and therefore what files to backup
+3. To get TenantToken 
+   - Login to Smartsheet, click on Account top right
+   - Select Apps & Integrations, then API, Generate Token
+   - **Token** becomes your **TenantToken** in tenantfile, that way the backup knows who you are and therefore what files to backup
 
-##### Backup Vault
-Configure a Smartsheet Workspace that will act as the backup container.  To do this:
+> [Good guide to get token ](https://help.meisterplan.com/hc/en-us/articles/115003776834-Creating-an-API-Access-Token-for-Smartsheet)
+
+### Backup Vault
+Once-off configure a Smartsheet Workspace that will act as the backup container.  To do this:
 1. Login to Smartsheet, select **Workspaces**, right-click and then select [Create new Workspace](https://www.smartsheet.com)
 2. Name the Workspace aptly, such as ``Vault`` or ``Backup Vault`` or ``SmartBackup Vault``
 3. Right-click on Vault Workspace and select **Properties**
@@ -85,14 +88,15 @@ Configure a Smartsheet Workspace that will act as the backup container.  To do t
 
 
 ### Run SmartBackup
-- SmartBackup R2.3 is only available for Windows environments 
+- SmartBackup ```R2.3``` is only available for Windows environments 
 - MacOS and Linux Versions will shortly be released 
 - When invoked from cmdline status and progress for each tenant will be shown as indicated below
 
 [![sbu run](images/Vault02.png)](http://www.acuworkflow.com)
 
-##### Optional Arguments
-The following parameters can optionally be passed as arguments on cmdiline invocation
+#### Optional Arguments
+The following parameters can optionally be passed as arguments on cmdline invocation
+
 ``-t or --tenantfile path\smartbackup.csv`` Path and filename of *TenantsFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  Smartbackup will terminate if file not found.
 
 ``-l or --logfile path\smartbackup.csv`` Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in current execution folder.  If not found will attempt to create one in current execution folder.  Smartbackup will terminate if it cannot be created.
@@ -100,33 +104,32 @@ The following parameters can optionally be passed as arguments on cmdiline invoc
 ``-d or --days 7`` Incremental backup.  Example shown, only backup sheets modified in last 7 days.  Backup all files modified in **days** period.  Default is 3 days.  To turn incremental backup into full backup typically do ``-d 9999``
 
 
-##### Run from Windows CMDLine
+#### Run from Windows CMDLine
 Invoke Cmdline by clicking on Windows search and type ``cmd``
 then invoke as follows:
-###### examples
-``sbu_r2.3.exe``  or
-``sbu_r2.3.exe -t c:\smartbackup\tenants\tenants.csv``
 
-##### Run from Windows Shortcut
+> ``sbu_r2.3.exe``  
+> ``sbu_r2.3.exe -t c:\smartbackup\tenants\tenants.csv``
+
+#### Run from Windows Shortcut
 Create shortcut pointing to EXE and click on shortcut
 
-##### Run from Windows Explorer
+#### Run from Windows Explorer
 Double click on EXE.  Note this method does not easily allow you to specify arguments
 
-##### Run from Windows Task Scheduler
+#### Run from Windows Task Scheduler
 Open Windows Task Scheduler and configure EXE to a schedule of your choice
 
-##### Run using PowerShell
+#### Run using PowerShell
 Script EXE using Powershell
 
 # Authors
 
 * **Deon Pollard** - *Base software R2.3* - [deon pollard & associates](https://deonpollard.com)
 
-See also list of [contributors](http://www.acusoftware.com) who participated in this project.
+> See also list of [contributors](http://www.acusoftware.com) who participated in this project.
 
 # License
 
 [![N|Solid](images/cc.png)](https://creativecommons.org/about/cclicenses/)
 This project is licensed under the Creative Commons License -  [LICENSE](https://creativecommons.org/about/cclicenses/) for details 
-
