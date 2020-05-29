@@ -3,7 +3,7 @@
 [![N|Solid](images/AcuWorkflow-logo-02L.jpg)](http://www.acuworkflow.com)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]() 
-[![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
+![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
 
 *SmartBackup* is a cloud-enabled backup utility for [Smartsheet](https://www.smartsheet.com).  Backup all your Smartsheet data. 
 (c) 2020 AcuWorkflow.
