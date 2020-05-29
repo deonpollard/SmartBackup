@@ -46,20 +46,18 @@ Steps involved:
 
 *SmartBackup* for Windows requires an EXE to run.
 
-Install *SmartBackup* on Backup Machine of your choice.  The version in [folder distro](/distro) is restricted to backing up only 3 sheets
+Install *SmartBackup* on Backup Machine of your choice.  
+
+> The version in [folder distro](/distro) is restricted to backing up only 3 sheets.  Contact [AcuWorkflow](http://www.acuworkflow.com) for licensed version with no restrictions.
+
 ```sh
 1. see image below; Click on Clone or Download, then **Download ZIP**
 2. Copy to folder of your choice and extract ZIP
-3. Folder Distro contains the EXE and sample Tenant and Log file
-``
+3. Folder Distro contains the EXE, sample Tenant and Log file
+```
+
 [![N|Solid](images/vault03.png)](http://www.acuworkflow.com)
 
-Àlternatively
-```sh
-$ mk smartbackup
-$ cd smartbackup
-$ xcopy <zipfolder\distro> smartbackup
-```
 
 ## Setup and Configuration
 
