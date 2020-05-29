@@ -87,6 +87,7 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 4. Copy the **Workspace ID** to tenantfile **VaultID**, in so doing it becomes the designated Target Backup area
 5. Copy the **Workspace Link** to tenantfile **VaultLink**
 
+> Note, Smartsheet restricts the number of sheets allowed for non-Enterprise [licenses](https://www.smartsheet.com/pricing).  Usually it is 100 per User or aggregate thereof e.g. 10 Users = 1000 Sheets.  In the event that you are running into these restrictions decrease the backup scope.
 
 ### Run SmartBackup
 - SmartBackup ```R2.3``` is only available for Windows environments 
@@ -98,12 +99,13 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 #### Optional Arguments
 The following parameters can optionally be passed as arguments on cmdline invocation
 
-``-t or --tenantfile path\smartbackup.csv`` Path and filename of *TenantsFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  Smartbackup will terminate if file not found.
+|Argument | Description |Example |
+| ------ | ------ | ------ |
+|**-t** or **--tenantsfile** | Path and filename of *TenantsFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  *Smartbackup* will terminate if file not found | ``-t c:\smartbackup\smartbackup.csv`` |
 
 ``-l or --logfile path\smartbackup.csv`` Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in current execution folder.  If not found will attempt to create one in current execution folder.  Smartbackup will terminate if it cannot be created.
 
-``-d or --days 7`` Incremental backup.  Example shown, only backup sheets modified in last 7 days.  Backup all files modified in **days** period.  Default is 3 days.  To turn incremental backup into full backup typically do ``-d 9999``
-
+``-d or --days 7`` Incremental backup.  Example shown, only backup sheets modified in last 7 days.  Backup all files modified in **days** period.  Default is 5 days.  To turn incremental backup into full backup typically do ``-d 9999``
 
 #### Run from Windows CMDLine
 Invoke Cmdline by clicking on Windows search and type ``cmd``
