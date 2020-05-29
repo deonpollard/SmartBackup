@@ -85,7 +85,7 @@ Configure a Smartsheet Workspace that will act as the backup container.  To do t
 ### Run SmartBackup
 - SmartBackup R2.3 is only available for Windows environments 
 - MacOS and Linux Versions will shortly be released 
-- When invoked from cmdline ```sbu_r2.3``` status and progress for each tenant will be shown as indicated below
+- When invoked from cmdline status and progress for each tenant will be shown as indicated below
 
 [![sbu run](images/vault02.png)](http://www.acuworkflow.com)
 
