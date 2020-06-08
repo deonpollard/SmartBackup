@@ -44,11 +44,6 @@ Steps involved:
   3. **Run SmartBackup** Schedule SmartBackup to run  
 
 ## Installation
-```sh
-[Installation User Guide](https://github.com/deonpollard/smartbackup/wiki/installation)
-```
-
-*SmartBackup* for Windows requires an EXE to run.
 
 Install *SmartBackup* on Backup Machine of your choice.  
 
@@ -56,10 +51,10 @@ Install *SmartBackup* on Backup Machine of your choice.
 
 Getting the EXE
 ```sh
-1. click on release toolbar button
+1. click on GitHub release toolbar button
 2. a screen similar to below will appear
-3. click on sbu_r2.3 exe and it will be downloaded
-4. move to folder of your choice
+3. click on latest realease for example sbu_r2.3 exe and it will be downloaded
+4. move to folder of your choice and run setup
 ```
 [![N|Solid](images/vault04.png)](http://www.acuworkflow.com)
 
@@ -87,7 +82,6 @@ The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv f
    - Select Apps & Integrations, then API, Generate Token
    - **Token** becomes your **TenantToken** in tenantfile, that way the backup knows who you are and therefore what files to backup
 
-> [Good guide to get token ](https://help.meisterplan.com/hc/en-us/articles/115003776834-Creating-an-API-Access-Token-for-Smartsheet)
 
 ### Backup Vault
 Once-off configure a Smartsheet Workspace that will act as the backup container.  To do this:
@@ -99,14 +93,14 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 
 > Note, Smartsheet restricts the number of sheets allowed for non-Enterprise [licenses](https://www.smartsheet.com/pricing).  Usually it is 100 per User or aggregate thereof e.g. 10 Users = 1000 Sheets.  In the event that you are running into these restrictions decrease the backup scope.
 
-### Run SmartBackup
-- SmartBackup ```R2.3``` is only available for Windows environments 
+# Run SmartBackup
+- SmartBackup ```R2.4``` is only available for Windows environments 
 - MacOS and Linux Versions will shortly be released 
 - When invoked from cmdline status and progress for each tenant will be shown as indicated below
 
 [![sbu run](images/Vault02.png)](http://www.acuworkflow.com)
 
-#### Optional Arguments
+## Optional Arguments
 The following parameters can optionally be passed as arguments on cmdline invocation
 
 **-t** or **--tenantfile** Path and filename of *TenantFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  *Smartbackup* will terminate if file not found 
@@ -123,7 +117,9 @@ Examples:
 ``-d 7`` 
 ``--days 30``
 
-#### Run from Windows CMDLine
+## Run from 
+
+### Run from Windows CMDLine
 Invoke Cmdline by clicking on Windows search and type ``cmd``then invoke as follows.
 Examples:
 
@@ -133,29 +129,28 @@ Examples:
 
 > ``sbu_r2.3 -d 15 -t=c:\smartbackup\sbutenants.csv -l=c:\smartbackup\sbulog.log``
 
-#### Run from Windows Shortcut
+### Run from Windows Shortcut
 Create shortcut pointing to EXE and click on shortcut
 
-#### Run from Windows Explorer
+### Run from Windows Explorer
 Double click on EXE.  Note this method does not easily allow you to specify arguments
 
-#### Run from Windows Task Scheduler
+### Run from Windows Task Scheduler
 Open Windows Task Scheduler and configure EXE to a schedule of your choice
 
-#### Run using PowerShell
+### Run using PowerShell
 Script EXE using Powershell
 
 # Authors
 
-* **Deon Pollard** - *Base software R2.3* - [deon pollard & associates](https://www.deonpollard.com)
+* **Deon Pollard** - *Base software* - [deon pollard & associates](https://www.deonpollard.com)
 
 > See also list of [contributors](http://www.acuworkflow.com) who participated in this project.
 
 # Planned Changes
 The following enhancements are planned
 
-- Direct Archiving Option
-- Indirect Archiving Option - Ability to automatically roll-off and archive sheets from Vault into Archive
+- Archive Option - Ability to automatically roll-off and archive sheets from Vault into Archive
 - Improved Reporting, Backup Catalog and Maps
 
 # License
