@@ -47,14 +47,14 @@ Steps involved:
 
 Install *SmartBackup* on Backup Machine of your choice.  
 
-> The free version in [folder distro](/distro) is restricted to backing up only 3 sheets.  Contact [AcuWorkflow](http://www.acuworkflow.com) for licensed version with no restrictions.
+> The free version is restricted to backing up only 3 sheets.  Contact [AcuWorkflow](http://www.acuworkflow.com) for licensed version with no restrictions.
 
-Getting the EXE
+Getting the Setup EXE
 ```sh
 1. click on GitHub release toolbar button
 2. a screen similar to below will appear
-3. click on latest realease for example sbu_r2.3 exe and it will be downloaded
-4. move to folder of your choice and run setup
+3. click on latest release for example sbu_r2.4 exe and it will be downloaded
+4. move to folder of your choice and run the setup which will install SmartBackup
 ```
 [![N|Solid](images/vault04.png)](http://www.acuworkflow.com)
 
