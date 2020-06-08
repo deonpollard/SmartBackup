@@ -21,7 +21,7 @@
 -	You can designate any Smartsheet Workspace as Backup Vault
 -	On the next backup run, all or a subset of your sheets will be backed-up into the Backup Vault group by backup set Folder
 -	Restore is a doddle, you simply copy the Sheet or rows from the Backup Vault area
-- [Documentation](https://github.com/deonpollard/smartbackup/wiki/)
+- [User Guides](https://github.com/deonpollard/smartbackup/wiki/)
 
 
 # How it works
@@ -45,14 +45,14 @@ Steps involved:
 
 ## Installation
 ```sh
-[Installation Guide](https://github.com/deonpollard/smartbackup/wiki/installation
+[Installation User Guide](https://github.com/deonpollard/smartbackup/wiki/installation)
 ```
 
 *SmartBackup* for Windows requires an EXE to run.
 
 Install *SmartBackup* on Backup Machine of your choice.  
 
-> The version in [folder distro](/distro) is restricted to backing up only 3 sheets.  Contact [AcuWorkflow](http://www.acuworkflow.com) for licensed version with no restrictions.
+> The free version in [folder distro](/distro) is restricted to backing up only 3 sheets.  Contact [AcuWorkflow](http://www.acuworkflow.com) for licensed version with no restrictions.
 
 Getting the EXE
 ```sh
