@@ -65,7 +65,7 @@ Getting the Setup EXE
 The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
 | Name | Description | Example |
-| ------ | ------ | ---- |
+| --- | --- | --- |
 | Status | Must be set to **'Enabled'** for processing tenant entry. To disable an entry on backup run change to the Status value to **‘Disabled’** | Enabled |
 | Tenant | Name of Tenant  | Joe Blocks |
 | TenantID | Email address of Tenant |  joe.blocks@acme.com |
