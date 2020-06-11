@@ -72,7 +72,7 @@ The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv f
 | TenantOrg | Organization Name of Tenant | Acme Corp |
 | TenantToken | Smartsheet **API Token** of Tenant (Backup Source) | ute0kvn9ol6lq10jwjylky9kdp |
 | VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment | ute0kvn9ol6lq10jwjylky9kdp |
-| VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides | 3458625596352300 |
+| VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides. Be carefull when editing this with Excel, since it will by default transform to exponential number, rather use Notepad for editing | 3458625596352300 |
 | VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides | ``https://app.smartsheet.com/workspaces...`` |
 | Archive | Link to where files can be archived to | C:\acmecorp\SmartSheet\Archive\ |
 
