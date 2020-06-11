@@ -64,16 +64,17 @@ Getting the Setup EXE
 ### Tenants file
 The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
-| Name | Value |
-| ------ | ------ |
-| Status | Must be set to **'Enabled'** for processing tenant entry. To disable an entry on backup run change to the Status value to **‘Disabled’** |
-| Tenant | Name of Tenant e.g. **Joe Blocks** |
-| TenantID | Email address of Tenant e.g. **joe.blocks@acme.com** |
-| TenantOrg | Organization Name of Tenant e.g. **Acme Corp** |
-| TenantToken | Smartsheet **API Token** of Tenant (Backup Source) |
-| VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment |
-| VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides |
-| VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides |
+| Name | Description | Example |
+| ------ | ------ | ---- |
+| Status | Must be set to **'Enabled'** for processing tenant entry. To disable an entry on backup run change to the Status value to **‘Disabled’** | Enabled |
+| Tenant | Name of Tenant  | Joe Blocks |
+| TenantID | Email address of Tenant |  joe.blocks@acme.com |
+| TenantOrg | Organization Name of Tenant | Acme Corp |
+| TenantToken | Smartsheet **API Token** of Tenant (Backup Source) | ute0kvn9ol6lq10jwjylky9kdp |
+| VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment | ute0kvn9ol6lq10jwjylky9kdp |
+| VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides | 3458625596352300 |
+| VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides | https://app.smartsheet.com/workspaces/M4qjgCcHWvxjR5vm7ffCHv49rc3cgxF24cvpvr45 |
+| Archive | Link to where files can be archived to | C:\acmecorp\SmartSheet\Archive\ |
 
 - You can have multiple Tenant Files each containing differing configurations based on your setup
 - At run time associate the Tenant file you want to use for that particular run
@@ -98,7 +99,7 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 - MacOS and Linux Versions will shortly be released 
 - When invoked from cmdline status and progress for each tenant will be shown as indicated below
 
-[![sbu run](images/Vault02.png)](http://www.acuworkflow.com)
+[![sbu run](images/cmdline.png)](http://www.acuworkflow.com)
 
 ## Optional Arguments
 The following parameters can optionally be passed as arguments on cmdline invocation
