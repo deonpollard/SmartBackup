@@ -73,7 +73,7 @@ The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv f
 | TenantToken | Smartsheet **API Token** of Tenant (Backup Source) | ute0kvn9ol6lq10jwjylky9kdp |
 | VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment | ute0kvn9ol6lq10jwjylky9kdp |
 | VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides | 3458625596352300 |
-| VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides | https://app.smartsheet.com/workspaces/M4qjgCcHWvxjR5vm7ffCHv49rc3cgxF24cvpvr45 |
+| VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides | ``https://app.smartsheet.com/workspaces...`` |
 | Archive | Link to where files can be archived to | C:\acmecorp\SmartSheet\Archive\ |
 
 - You can have multiple Tenant Files each containing differing configurations based on your setup
