@@ -63,19 +63,27 @@ Install *SmartBackup* on Backup Machine of your choice.
 
 [![N|Solid](images/Home.png)]()
 
+### First Time Users
+1.  You will be prompted to configure some valid Tenant/s (at least one) by completeing the following details
+2.  To understand details required see Setup & Configuration Tenants file
 
+[![N|Solid](images/Tenants.png)]()
 
+### Your first Backup run
+1. Click on Run Now
+2. After slight delay a Backup Run started popup will appear. 
+3. Optionally you can view progress by switching to console server window, alternatively status will be displayed after the backup run is completed
 
-
-
-
-
+[![N|Solid](images/Backups.png)]()
 
 
 ## Setup and Configuration
 
 ### Tenants file
-The Tenants file is  mandatory and must be supplied.  Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
+The Tenants file is mandatory and must be supplied.  It will be installed in the <installation dir>\data directory typically c:\smartbackup\data
+You can edit this file via Notepad, see below or via the console user interface.
+  
+Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
 | Name | Description | Example |
 | --- | --- | --- |
