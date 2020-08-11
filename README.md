@@ -54,7 +54,9 @@ Install *SmartBackup* on Backup Machine of your choice.
 > The free version is restricted to backing up only 3 sheets.  Contact [AcuWorkflow](http://www.acuworkflow.com) for licensed version with no restrictions.
 1. Download from [AcuWorkflow](http://www.acuworkflow.com), run SETUP and follow instructions
 2. Choose Full Installation when first time User
-3. Choose Custom Installation and unselect Data Files if you are re-installing and want to preserve previous settings
+3. Choose Custom Installation and unselect Data Files if you are re-installing and want to preserve your previous settings
+
+[![N|Solid](images/setupinstall.png)]()
 
 ## Using SmartBackup 
 
@@ -64,8 +66,9 @@ Install *SmartBackup* on Backup Machine of your choice.
 [![N|Solid](images/Home.png)]()
 
 ### First Time Users
-1.  You will be prompted to configure some valid Tenant/s (at least one) by completeing the following details
+1.  You will be prompted to configure some valid Tenant/s (at least one) by completeing some details
 2.  To understand details required see Setup & Configuration Tenants file
+3.  You also MUST setup a Backup Vault within Smartsheet see Setup & Configuration Vault
 
 [![N|Solid](images/Tenants.png)]()
 
@@ -152,13 +155,13 @@ Examples:
 > ``sbu_r2.3 -d 15 -t=c:\smartbackup\sbutenants.csv -l=c:\smartbackup\sbulog.log``
 
 ### Run from Windows Shortcut
-Create shortcut pointing to EXE and click on shortcut
+Installation will create a shortcut pointing to Console.EXE - click on shortcut to invoke Console UI
 
 ### Run from Windows Explorer
-Double click on EXE.  Note this method does not easily allow you to specify arguments
+Double click on Console.EXE for UI.  To invoke Backup directly double click on Backup.EXE. Note this method does not easily allow you to specify arguments
 
 ### Run from Windows Task Scheduler
-Open Windows Task Scheduler and configure EXE to a schedule of your choice
+Open Windows Task Scheduler and configure Backup.EXE to a schedule of your choice
 
 ### Run using PowerShell
 Script EXE using Powershell
