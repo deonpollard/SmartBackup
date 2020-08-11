@@ -61,7 +61,7 @@ Install *SmartBackup* on Backup Machine of your choice.
 1. Invoke SmartBackup by clicking on desktop shortcut or double-click on console.exe in \apps installation folder
 2. A cmd Window will appear running the Console Server with slight delay and then a browser view will be opened running the console client
 
-[![N|Solid](images/home.png)]()
+[![N|Solid](images/Home.png)]()
 
 
 
