@@ -44,8 +44,8 @@ These instructions will get you up and running with *SmartBackup*.
 
 Steps involved:
   1. **Installation** Install SmartBackup for yourself, team, division, or Organization
-  2. **Setup and Configuration** Configure SmartBackup for your needs
-  3. **Run SmartBackup** Schedule SmartBackup to run  
+  2. **Setup and Configuration** Configure SmartBackup for your needs either by editing the setup files with an editor or via the user interface
+  3. **Run SmartBackup** Schedule SmartBackup to run via the user interface or other  
 
 ## Installation
 
@@ -80,8 +80,8 @@ Install *SmartBackup* on Backup Machine of your choice.
 ## Setup and Configuration
 
 ### Tenants file
-The Tenants file is mandatory and must be supplied.  It will be installed in the <installation dir>\data directory typically c:\smartbackup\data
-You can edit this file via Notepad, see below or via the console user interface.
+The Tenants file is mandatory and must be supplied.  It is installed in the <installation dir>\data directory typically c:\smartbackup\data
+You can edit this file via Notepad, see below or via the console user interface as indicated before.
   
 Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
@@ -116,7 +116,7 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 > Note, Smartsheet restricts the number of sheets allowed for non-Enterprise [licenses](https://www.smartsheet.com/pricing).  Usually it is 100 per User or aggregate thereof e.g. 10 Users = 1000 Sheets.  In the event that you are running into these restrictions decrease the backup scope.
 
 # Run SmartBackup
-- SmartBackup ```R2.4``` is only available for Windows environments 
+- SmartBackup ```R2.8``` is only available for Windows environments 
 - MacOS and Linux Versions will shortly be released 
 - When invoked from cmdline status and progress for each tenant will be shown as indicated below
 
