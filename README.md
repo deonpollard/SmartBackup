@@ -48,7 +48,7 @@ Steps involved:
   3. **Using SmartBackup** Schedule or run SmartBackup on demand
 
 ## Installation
-** [INSTALLATION GUIDE](https://github.com/deonpollard/smartbackup/wiki/Installation) **
+[INSTALLATION GUIDE](https://github.com/deonpollard/smartbackup/wiki/Installation) 
 
 Install *SmartBackup* on Backup Machine of your choice.  
 
@@ -59,7 +59,7 @@ Install *SmartBackup* on Backup Machine of your choice.
 
 
 ## Setup and Configuration
-** [SETUP GUIDE](https://github.com/deonpollard/smartbackup/wiki/Setup) **
+[SETUP GUIDE](https://github.com/deonpollard/smartbackup/wiki/Setup)
 
 Smartbackup requires you to configure:
 1. Smartsheet Users that will make use of SmartBackup, called Tenants
@@ -99,22 +99,22 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 
 > Note, Smartsheet restricts the number of sheets allowed for non-Enterprise [licenses](https://www.smartsheet.com/pricing).  Usually it is 100 per User or aggregate thereof e.g. 10 Users = 1000 Sheets.  In the event that you are running into these restrictions decrease the backup scope.
 
-## Using SmartBackup 
-** [USER GUIDE](https://github.com/deonpollard/smartbackup/wiki/Usingit) **
+# Using SmartBackup 
+[USER GUIDE](https://github.com/deonpollard/smartbackup/wiki/Usingit)
 
 1. Invoke SmartBackup by clicking on desktop shortcut or double-click on console.exe in \apps installation folder
 2. A cmd Window will appear running the Console Server with slight delay and then a browser view will be opened running the console client
 
 [![N|Solid](images/Home.png)]()
 
-### First Time Users
+## First Time Users
 1.  You will be prompted to configure some valid Tenant/s (at least one) by completeing some details
 2.  To understand details required see Setup & Configuration Tenants file
 3.  You also MUST setup a Backup Vault within Smartsheet see Setup & Configuration Vault
 
 [![N|Solid](images/Tenants.png)]()
 
-### Your first Backup run
+## Your first Backup run
 1. Click on Run Now
 2. After slight delay a Backup Run started popup will appear. 
 3. Optionally you can view progress by switching to console server window, alternatively status will be displayed after the backup run is completed
