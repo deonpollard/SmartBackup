@@ -21,7 +21,7 @@
 -	You can designate any Smartsheet Workspace as Backup Vault
 -	On the next backup run, all or a subset of your sheets will be backed-up into the Backup Vault group by backup set Folder
 -	Restore is a doddle, you simply copy the Sheet or rows from the Backup Vault area
-- [User Guides](https://github.com/deonpollard/smartbackup/wiki/)
+- [USER GUIDES](https://github.com/deonpollard/smartbackup/wiki/)
 
 
 # How it works
@@ -35,7 +35,7 @@
   -- headless(no user interface, available as cmdline routine) and possibly be integrated with your other supporting services or
   -- headfull in which case you access it via a web user interface.
 
-[![N|Solid](images/vault01.png)](http://www.acuworkflow.com)
+[![N|Solid](images/vault01.png)](http://www.acuworkflow.com/smartbackup.html)
 
 
 # Getting Started
@@ -43,48 +43,30 @@
 These instructions will get you up and running with *SmartBackup*.
 
 Steps involved:
-  1. **Installation** [Install](##installation) SmartBackup for yourself, team, division, or Organization
-  2. **Setup and Configuration** Configure SmartBackup for your needs either by editing the setup files with an editor or via the user interface
-  3. **Run SmartBackup** Schedule SmartBackup to run via the user interface or other  
+  1. **Installation** Install SmartBackup for yourself, team, division, or Organization 
+  2. **Setup and Configuration** Configure SmartBackup for your needs
+  3. **Using SmartBackup** Schedule or run SmartBackup on demand
 
 ## Installation
+** [INSTALLATION GUIDE](https://github.com/deonpollard/smartbackup/wiki/Installation) **
 
 Install *SmartBackup* on Backup Machine of your choice.  
 
 > The free version is restricted to backing up only 3 sheets.  Contact [AcuWorkflow](http://www.acuworkflow.com) for licensed version with no restrictions.
-1. Download from [AcuWorkflow](http://www.acuworkflow.com), run SETUP and follow instructions
+1. Download from [AcuWorkflow](http://www.acuworkflow.com/smartbackup.html), run SETUP and follow instructions
 2. Choose Full Installation when first time User
 3. Choose Custom Installation and unselect Data Files if you are re-installing and want to preserve your previous settings
 
-[![N|Solid](images/setupinstall.png)]()
-
-## Using SmartBackup 
-
-1. Invoke SmartBackup by clicking on desktop shortcut or double-click on console.exe in \apps installation folder
-2. A cmd Window will appear running the Console Server with slight delay and then a browser view will be opened running the console client
-
-[![N|Solid](images/Home.png)]()
-
-### First Time Users
-1.  You will be prompted to configure some valid Tenant/s (at least one) by completeing some details
-2.  To understand details required see Setup & Configuration Tenants file
-3.  You also MUST setup a Backup Vault within Smartsheet see Setup & Configuration Vault
-
-[![N|Solid](images/Tenants.png)]()
-
-### Your first Backup run
-1. Click on Run Now
-2. After slight delay a Backup Run started popup will appear. 
-3. Optionally you can view progress by switching to console server window, alternatively status will be displayed after the backup run is completed
-
-[![N|Solid](images/Backups.png)]()
-
 
 ## Setup and Configuration
+** [SETUP GUIDE](https://github.com/deonpollard/smartbackup/wiki/Setup) **
 
-### Tenants file
-The Tenants file is mandatory and must be supplied.  It is installed in the <installation dir>\data directory typically c:\smartbackup\data
-You can edit this file via Notepad, see below or via the console user interface as indicated before.
+Smartbackup requires you to configure:
+1. Smartsheet Users that will make use of SmartBackup, called Tenants
+2. Smartsheet Vault, designate a Workspace within Smartsheet tha will be use as the Backup Vault
+
+### Tenants
+The Tenants file containing details of Smartbackup users is mandatory and must be supplied. It is installed automatically and you can edit this file via Notepad, or update via the console user interface.
   
 Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
@@ -107,7 +89,6 @@ Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenan
    - Select Apps & Integrations, then API, Generate Token
    - **Token** becomes your **TenantToken** in tenantfile, that way the backup knows who you are and therefore what files to backup
 
-
 ### Backup Vault
 Once-off configure a Smartsheet Workspace that will act as the backup container.  To do this:
 1. Login to Smartsheet, select **Workspaces**, right-click and then select [Create new Workspace](https://www.smartsheet.com)
@@ -118,53 +99,28 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 
 > Note, Smartsheet restricts the number of sheets allowed for non-Enterprise [licenses](https://www.smartsheet.com/pricing).  Usually it is 100 per User or aggregate thereof e.g. 10 Users = 1000 Sheets.  In the event that you are running into these restrictions decrease the backup scope.
 
-# Run SmartBackup
-- SmartBackup ```R2.8``` is only available for Windows environments 
-- MacOS and Linux Versions will shortly be released 
-- When invoked from cmdline status and progress for each tenant will be shown as indicated below
+## Using SmartBackup 
+** [USER GUIDE](https://github.com/deonpollard/smartbackup/wiki/Usingit) **
 
-[![sbu run](images/cmdline.png)](http://www.acuworkflow.com)
+1. Invoke SmartBackup by clicking on desktop shortcut or double-click on console.exe in \apps installation folder
+2. A cmd Window will appear running the Console Server with slight delay and then a browser view will be opened running the console client
 
-## Optional Arguments
-The following parameters can optionally be passed as arguments on cmdline invocation
+[![N|Solid](images/Home.png)]()
 
-**-t** or **--tenantfile** Path and filename of *TenantFile*.  If not supplied will default to SmartBackup.csv in current execution folder.  *Smartbackup* will terminate if file not found 
-Examples:  
-``-t c:\smartbackup\smartbackup.csv``
-``--tenantfile \\acmecorp\appserver\smartbackup.csv``
+### First Time Users
+1.  You will be prompted to configure some valid Tenant/s (at least one) by completeing some details
+2.  To understand details required see Setup & Configuration Tenants file
+3.  You also MUST setup a Backup Vault within Smartsheet see Setup & Configuration Vault
 
-**-l** or **--logfile** Path and filename of *LogFile*.  If not supplied will default to SmartBackup.log in current execution folder.  If not found will attempt to create one in current execution folder.  Smartbackup will terminate if it cannot be created.
-Examples:
-``--logfile path\smartbackup.csv`` 
+[![N|Solid](images/Tenants.png)]()
 
-**-d** or **--days** Incremental backup by only backing up sheets modified in **days** period.  Default is ``5`` days.  To turn incremental backup into full backup typically do ``-d 9999``
-Examples:
-``-d 7`` 
-``--days 30``
+### Your first Backup run
+1. Click on Run Now
+2. After slight delay a Backup Run started popup will appear. 
+3. Optionally you can view progress by switching to console server window, alternatively status will be displayed after the backup run is completed
 
-## Run from 
+[![N|Solid](images/Backups.png)]()
 
-### Run from Windows CMDLine
-Invoke Cmdline by clicking on Windows search and type ``cmd``then invoke as follows.
-Examples:
-
-> ``sbu_r2.3``  
-
-> ``sbu_r2.3 -t c:\smartbackup\tenants\tenants.csv``
-
-> ``sbu_r2.3 -d 15 -t=c:\smartbackup\sbutenants.csv -l=c:\smartbackup\sbulog.log``
-
-### Run from Windows Shortcut
-Installation will create a shortcut pointing to Console.EXE - click on shortcut to invoke Console UI
-
-### Run from Windows Explorer
-Double click on Console.EXE for UI.  To invoke Backup directly double click on Backup.EXE. Note this method does not easily allow you to specify arguments
-
-### Run from Windows Task Scheduler
-Open Windows Task Scheduler and configure Backup.EXE to a schedule of your choice
-
-### Run using PowerShell
-Script EXE using Powershell
 
 # Authors
 
