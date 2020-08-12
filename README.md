@@ -43,7 +43,7 @@
 These instructions will get you up and running with *SmartBackup*.
 
 Steps involved:
-  1. **Installation** Install SmartBackup for yourself, team, division, or Organization
+  1. **Installation** [Install](##installation) SmartBackup for yourself, team, division, or Organization
   2. **Setup and Configuration** Configure SmartBackup for your needs either by editing the setup files with an editor or via the user interface
   3. **Run SmartBackup** Schedule SmartBackup to run via the user interface or other  
 
