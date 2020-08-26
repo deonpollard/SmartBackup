@@ -3,7 +3,7 @@
 [![N|Solid](images/AcuWorkflow-logo-02L.jpg)](http://www.acuworkflow.com)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]() 
-![versions](https://img.shields.io/pypi/pyversions/pybadges.svg) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+![versions](https://img.shields.io/pypi/pyversions/pybadges.svg) ![versions](https://img.shields.io/badge/vue-2.x-brightgreen.svg) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 *SmartBackup* is a cloud-enabled backup utility for [Smartsheet](https://www.smartsheet.com).  Backup all your Smartsheet data. 
 (c) 2020 AcuWorkflow.
@@ -11,7 +11,8 @@
 - [x] **Multi-Tenant** solution - can take backups of all, groups-of or any Smartsheet User
 -	[x] **Preserve** all Sheet formatting, a feature not available from standard Smartsheet backups
 -	[x] Perform **snapshot copy** of all your sheets to a Smartsheet Workspace of your choice
--	[x] **Incremental or full back-ups** you have the option to only backup sheets that have changed in last ```x``` days
+-	[x] **Incremental or full back-ups** with archiving; you have the option to only backup sheets that have changed in last ```x``` days
+-	[x] **Export** in addition you can export sheets preserving as much of the smartsheet environmentals as possible
 -	[x] Ideal for individuals or teams wanting to snapshot data after certain **events milestones**
 
 > Typically *SmartBackup* is used to provide **rolling window of active sheets** one can re-instate, ideal for when inadvertent changes are made and one needs to roll-back invalid copy
@@ -80,7 +81,6 @@ Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenan
 | VaultToken | Smartsheet **API Token** of Vault Tenant (Backup Target). Should be the same if Tenant is backing up to a Workspace within his/her environment | ute0kvn9ol6lq10jwjylky9kdp |
 | VaultID | Smartsheet **Workspace ID** of Workspace where designated Vault resides. Be carefull when editing this with Excel, since it will by default transform to exponential number, rather use Notepad for editing | 3458625596352300 |
 | VaultLink | Smartsheet **Workspace Link** of Workspace where designated Vault resides | ``https://app.smartsheet.com/workspaces...`` |
-| Archive | Link to where files can be archived to | C:\acmecorp\SmartSheet\Archive\ |
 
 - You can have multiple Tenant Files each containing differing configurations based on your setup
 - At run time associate the Tenant file you want to use for that particular run
