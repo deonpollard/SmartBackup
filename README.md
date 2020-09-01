@@ -67,7 +67,7 @@ Smartbackup requires you to configure:
 2. Smartsheet Vault, designate a Workspace within Smartsheet tha will be use as the Backup Vault
 
 ### Tenants
-The Tenants file containing details of Smartbackup users is mandatory and must be supplied. It is installed automatically and you can edit this file via Notepad, or update via the console user interface.
+The Tenant file containing details of Smartbackup users is mandatory and must be supplied. It is installed automatically and you can edit this file via Notepad, or update via the console user interface.
   
 Edit the SmartBackup.csv file to contain entries for every Smartsheet User(Tenant) you want to backup. Note column names must be spelled exactly as shown and are case-sensitive.
 
