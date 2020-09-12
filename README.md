@@ -100,16 +100,17 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 
 # Using SmartBackup 
 [USER GUIDE](https://github.com/deonpollard/smartbackup/wiki/User-Guide)
-
-1. Invoke SmartBackup by clicking on desktop shortcut or double-click on console.exe in \apps installation folder
-2. A cmd Window will appear running the Console Server with slight delay and then a browser view will be opened running the console client
+Any of the Smartbackup components (e.g. Backup, Archive, export) can be invoked independantly or in conjunction. They can be invoked:
+1. via the User Interface called the SmartBackup Console
+1. using Windows Explorer and clicking directly on the component .EXE
+1. using Powershell or any typical operations script (PowerAutomate etc.)
 
 > For scheduled backups use Windows TaskScheduler, see [User Guide](https://github.com/deonpollard/smartbackup/wiki/User-Guide)
 
-Any of the Smartbackup components (e.g. Backup, Archive, export) can be invoked independantly or in conjunction. They can be invoked:
-1. via the User Interface
-1. using Windows Explorer and clicking directly on the component .EXE
-1. using Powershell or any typical operations script (PowerAutomate etc.)
+## SmartBackup Console
+1. Invoke SmartBackup by clicking on desktop shortcut or double-click on console.exe in \apps installation folder
+2. A cmd Window will appear running the Console Server with slight delay and then a browser view will be opened running the console client
+
 
 [![N|Solid](images/Home.png)]()
 
