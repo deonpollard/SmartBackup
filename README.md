@@ -49,7 +49,7 @@ Steps involved:
   3. **Using SmartBackup** Schedule or run SmartBackup on demand
 
 ## Installation
-[INSTALLATION GUIDE](https://github.com/deonpollard/smartbackup/wiki/Installation) 
+[INSTALLATION GUIDE](https://github.com/deonpollard/smartbackup/wiki/Installation-Guide) 
 
 Install *SmartBackup* on Backup Machine of your choice.  
 
