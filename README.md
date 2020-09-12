@@ -60,7 +60,7 @@ Install *SmartBackup* on Backup Machine of your choice.
 
 
 ## Setup and Configuration
-[SETUP GUIDE](https://github.com/deonpollard/smartbackup/wiki/Setup)
+[SETUP GUIDE](https://github.com/deonpollard/smartbackup/wiki/Setup-Guide)
 
 Smartbackup requires you to configure:
 1. Smartsheet Users that will make use of SmartBackup, called Tenants
@@ -99,10 +99,17 @@ Once-off configure a Smartsheet Workspace that will act as the backup container.
 > Note, Smartsheet restricts the number of sheets allowed for non-Enterprise [licenses](https://www.smartsheet.com/pricing).  Usually it is 100 per User or aggregate thereof e.g. 10 Users = 1000 Sheets.  In the event that you are running into these restrictions decrease the backup scope.
 
 # Using SmartBackup 
-[USER GUIDE](https://github.com/deonpollard/smartbackup/wiki/Usingit)
+[USER GUIDE](https://github.com/deonpollard/smartbackup/wiki/User-Guide)
 
 1. Invoke SmartBackup by clicking on desktop shortcut or double-click on console.exe in \apps installation folder
 2. A cmd Window will appear running the Console Server with slight delay and then a browser view will be opened running the console client
+
+> For scheduled backups use Windows TaskScheduler, see [User Guide](https://github.com/deonpollard/smartbackup/wiki/User-Guide)
+
+Any of the Smartbackup components (e.g. Backup, Archive, export) can be invoked independantly or in conjunction. They can be invoked:
+1. via the User Interface
+1. using Windows Explorer and clicking directly on the component .EXE
+1. using Powershell or any typical operations script (PowerAutomate etc.)
 
 [![N|Solid](images/Home.png)]()
 
