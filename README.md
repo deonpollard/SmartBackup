@@ -17,7 +17,7 @@
 
 > Typically *SmartBackup* is used to provide **rolling window of active sheets** one can re-instate, ideal for when inadvertent changes are made and one needs to roll-back invalid copy
 
-[![N|Solid](images/AcuWorkflow-logo-02L.jpg)](http://www.acuworkflow.com)
+[![N|Solid](images/speaker.png)](http://www.acuworkflow.com)
 # Easy to Use
 
 -	You can designate any Smartsheet Workspace as Backup Vault
