@@ -1,6 +1,5 @@
 # SmartBackup
 
-[![N|Solid](images/AcuWorkflow-logo-02L.jpg)](http://www.acuworkflow.com)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]() 
 ![versions](https://img.shields.io/pypi/pyversions/pybadges.svg) ![versions](https://img.shields.io/badge/vue-2.x-brightgreen.svg) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
