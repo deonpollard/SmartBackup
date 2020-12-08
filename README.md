@@ -18,9 +18,9 @@
 > Typically *SmartBackup* is used to provide **rolling window of active sheets** one can re-instate, ideal for when inadvertent changes are made and one needs to roll-back invalid copy
 
 # SmartBackup Information Portal
-click to connect
+*click on image to go to information portal*
 
-[![N|Solid](images/hero-img.png)](https://deonpollard.github.io/SmartBackup/# = 250x250)
+[![N|Solid](images/hero-img.png)](https://deonpollard.github.io/SmartBackup/#)
 
 
 # Easy to Use
