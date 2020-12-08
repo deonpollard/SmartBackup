@@ -20,7 +20,7 @@
 # SmartBackup Information Portal
 click to connect
 
-[](images/hero-img.png =250x250)](https://deonpollard.github.io/SmartBackup/#)
+[![N|Solid](images/hero-img.png)](https://deonpollard.github.io/SmartBackup/# = 250x250)
 
 
 # Easy to Use
