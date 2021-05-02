@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]() 
 ![versions](https://img.shields.io/pypi/pyversions/pybadges.svg) ![versions](https://img.shields.io/badge/vue-2.x-brightgreen.svg) [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-![version](https://img.shields.io/badge/version-3.2.0-blue)
+![version](https://img.shields.io/badge/version-3.3.4-blue)
 
 *SmartBackup* is a cloud-enabled backup utility for [Smartsheet](https://www.smartsheet.com).  Backup all your Smartsheet data. 
 (c) 2021 AcuWorkflow.
@@ -14,7 +14,9 @@
 -	[x] Perform **snapshot copy** of all your sheets to a Smartsheet Workspace of your choice
 -	[x] **Incremental or full back-ups** with archiving; you have the option to only backup sheets that have changed in last ```x``` days
 -	[x] **Export** in addition you can export sheets preserving as much of the smartsheet environmentals as possible
--	[x] Ideal for individuals or teams wanting to snapshot data after certain **events milestones**
+
+> Business Edition ideal for individuals or teams wanting to snapshot data after certain **events milestones**
+> Enterprise Edition ideal for larger groups and organizations
 
 > Typically *SmartBackup* is used to provide **rolling window of active sheets** one can re-instate, ideal for when inadvertent changes are made and one needs to roll-back invalid copy
 
