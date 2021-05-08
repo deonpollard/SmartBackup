@@ -62,7 +62,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">home</a></li>
-          <li><a href="#about">what's new</a></li>
+          <li><a href="#about">why this</a></li>
           <li><a href="#services">using it for</a></li>
           <li><a href="#pricing">get going</a></li>
           <li class="drop-down"><a href="">guides</a>
@@ -124,37 +124,35 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>What's new!</h2>
+          <h2>Why this!</h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-4 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/sblogo.png" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-8">
             <p>
-              <span class="badge badge-pill badge-secondary">April 6 - 2021</span> AcuWorkflow pleased to anounce <span id="sbu">SmartBackup</span> v3.4, a new release of the leading Backup solution for Smartsheet. 
-              Get control of your Smartsheet data!
+              There are various reasons for having backups. In climbing, a backup can save your life, but with data, a backup can save your business.  
             </p>
+            <h5>why now?</h5>
             <ul>
-              <li><i class="ri-check-double-line"></i> Export - range of new options to get all/some of your Smartsheet data outside Smartsheet in similar tree hierarchy </li>
-              <li><i class="ri-check-double-line"></i> Backup - get an exact copy of your sheets</li>
-              <li><i class="ri-check-double-line"></i> Deal with Sheets, Reports and Dashboards</li>
-              <li><i class="ri-check-double-line"></i> Enhanced Analytics and improvements to User Interface</li>
+              <li><i class="ri-check-double-line"></i> More Smartsheet means more people sharing. People are not infallible. They make mistakes, and actually, they make them quite often. There’s no reason to fear this if you take frequent incremental backups.</li>
+              <li><i class="ri-check-double-line"></i> The IRS and regulatory commissions really don’t care that you had a data disaster. All it means to them is that you’re not compliant and they can fine you. Insuring that you’ve got an offsite backup of critical Smartsheet information can really save you if something goes wrong.</li>
+              <li><i class="ri-check-double-line"></i> You are responsible for your Smartsheet data, in the event of a minor or even major mishap means your operations can quickly recover.</li>
+              
             </ul>
           </div>
-          <div class="col-lg-4 pt-4 pt-lg-0">
+
+        </div>
+        <div class="row content">
+          <div class="col-lg-12 d-flex align-items-center">
             <p>
-              Improvements to the existing base:
+              Those in the know will know Smartsheet themselves provide a convenient Backup facility.  The challenge comes when you want to recover from it and realises things like your automations, cell formats, links etc. cannot be recovered becuase the copy you have is outside the Smartshhet environment. With us, easy-peasy.  
             </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> New Enterprise features </li>
-              <li><i class="ri-check-double-line"></i> Automatically provision all Users from Smartsheet via sysadmin token, no more looking for User API Tokens</li>
-              <li><i class="ri-check-double-line"></i> Concurrent exports with queue concept to reduce overall duration and allow paralel processing.</li>
-              <li><i class="ri-check-double-line"></i> Incremental Export - only export sheets that was changed in last x days</li>
-            </ul>
-            <a href="https://www.acuworkflow.com/" class="btn-learn-more">take SmartBackup for a spin</a>
+            <br><br><a href="https://www.acuworkflow.com/" class="btn-learn-more">take SmartBackup for a spin</a>
           </div>
+
         </div>
 
       </div>
@@ -199,7 +197,7 @@
                   <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Export <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
-                      On-demand or sheduled securing of all or individual sheets to a filestore residing outside Smartsheet.  Ideal for taking snapshots or DRP Recovery points.
+                      On-demand or sheduled securing of all or individual sheets to a filestore or other cloud residing outside Smartsheet.  Ideal for taking snapshots or DRP Recovery points. Did we mention it can also do incrementals.
                     </p>
                   </div>
                 </li>
@@ -328,6 +326,8 @@
             <p class="font-italic">like all backups we need to configure some stuff, like where you want to store your info</p>
             <h4>our aim is to get you going in 10-15 minutes, hassle free</h4>
             <a href="easysteps.html" class="btn-learn-more">follow these 3 simple steps</a>
+            <br><br> <br>
+            <p class="font-italic">Enterprise Customers, your life is even simpler, this all get done for you.  Please see Guides</p>
           </div>
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/easy.jpg" class="img-fluid rounded" alt="">
@@ -419,6 +419,13 @@
               </div>
             </li>
             <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Are there different versions? What is the difference between Business and Enterprise Editions? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Yes, there are different versions please check out the <a href="https://github.com/deonpollard/SmartBackup/wiki/Reference-Guide" target="_blank">Reference Guide</a> The major difference between Business and Enterprise are automation, centralised admin and more easily deal with larger environments.  For example in Business Edition every Backup User needs a Smartsheet API token, easily obtainable and manageable for 1 or 3 Users.  Thereafter it becomes problematic, something easily solved with the Enterprise Edition which uses a single super api token called a sysadmin token.</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-6" class="collapsed">I have some more questions. Where can I find more information?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-6" class="collapse" data-parent=".faq-list">
                 <p>
@@ -466,12 +473,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.acuworkflow.com/" target="_blank">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.acuworkflow.com" target="_blank">AcuWorkflow</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://deonpollard.pythonanywhere.com" target="_blank">Administration</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/deonpollard/SmartBackup" target="_blank">GitHub</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/deonpollard/SmartBackup/wiki" target="_blank">GitHub Wiki</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.smartsheet.com" target="_blank">Smartsheet</a></li>
             </ul>
           </div>
 
