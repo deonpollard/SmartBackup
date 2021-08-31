@@ -1,3 +1,16 @@
+
+# NOTE
+
+>This documentation has been **deprecated!** While we will no longer update this documentation set,
+>it will remain available for a short time while users transition to the new documentation site.
+
+>To see SmartBackup’s current documentation, go to and bookmark [https://docs.acuworkflow.com](https://docs.acuworkflow.com)
+
+---
+---
+## Deprecated Documentation below
+
+
 # SmartBackup
 
 
